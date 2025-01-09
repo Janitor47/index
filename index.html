@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simbablog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- New Top Section with Text and GIFs -->
+    <div class="top-section">
+        <img src="images/maxwell.gif" class="side-gif" alt="Maxwell GIF"> <!-- Left side GIF -->
+        
+        <div class="text-content">
+            <h1>welcome to the simba blog</h1> <!-- Main Title Text -->
+            <p>here u can type something on the wall and it will save i hope</p>
+            <h2>why did i make this?</h2>
+            <p>why not dam bro</p>
+            <p class="year-text">&copy; 2025 group wall</p> <!-- New text below the previous paragraph -->
+        </div>
+        
+        <img src="images/maxwell.gif" class="side-gif" alt="Maxwell GIF"> <!-- Right side GIF -->
+    </div>
+
+    <!-- Message Wall Section -->
+    <div class="message-wall">
+        <h2>message wall</h2>
+        <button id="new-post-btn">make a new message</button>
+        <div id="wall-posts"></div>
+    </div>
+
+    <!-- Modal for Adding New Post -->
+    <div id="new-post-form" class="modal">
+        <div class="modal-content">
+            <span id="close-form">&times;</span>
+            <h2>create a new Post</h2>
+            <label for="name">name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="blog-text">message:</label>
+            <textarea id="blog-text" placeholder="Write your message here"></textarea>
+            <label for="image-upload">upload an image or gif:</label>
+            <input type="file" id="image-upload" accept="image/*,video/*" />
+            <button id="finish-post-btn">im done =3</button>
+        </div>
+    </div>
+
+    <!-- Image Preview Overlay -->
+    <div id="image-preview-overlay">
+        <div id="overlay-content">
+            <img src="" alt="Image Preview">
+            <button id="close-image-btn">X</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
